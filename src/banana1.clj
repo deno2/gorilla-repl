@@ -7,6 +7,11 @@
 ;;; 
 ;;; This might even turn out to be my first actual blog post!!
 ;;; 
+;;; [gorilla-repl.org](http://gorilla-repl.org/ "Gorilla REPL's Homepage")
+;;; 
+;;; [Github Project](https://github.com/JonyEpsilon/gorilla-repl "Gorilla REPL's Github Project")
+;;; 
+;;; 
 ;;; **So how do I use this big, hairy REPL?**
 ;;; 
 ;;; First define a namespace and specify your requirements as usual:
@@ -15,7 +20,8 @@
 ;; @@
 (ns worksheets.banana1
   (:require [gorilla-plot.core :as plot]
-            [gorilla-repl.table :as table])
+            [gorilla-repl.table :as table]
+            [gorilla-repl.html :as h])
   (:use clojure.repl
         clojure.pprint
         clojure.data))
@@ -132,6 +138,35 @@
 ;; <=
 
 ;; **
+;;; ### How do I Get my Hands on that Gorilla?
+;;; 
+;;; Here are the links you need to start with [JonnyEpsilon's](https://github.com/JonyEpsilon "JonnyEpsilon") Gorilla REPL.
+;;; 
+;;; [gorilla-repl.org](http://gorilla-repl.org/ "Gorilla REPL's Homepage")
+;;; 
+;;; [Github Project](https://github.com/JonyEpsilon/gorilla-repl "Gorilla REPL's Github Project")
+;;; 
+;;; 
+;;; 
+;;; 
+;;; 
+;; **
+
+;; **
+;;; 
+;;; 
 ;;; ##### Dene Simpson (@cljdeno)
+;;; ##### Immutable Ltd
 ;;; ##### 30 July 2014.
 ;; **
+
+;; @@
+(repeat (rand-int 20) (gorilla-repl.html/html-view "<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>"))
+;; @@
+;; =>
+;;; {"type":"list-like","open":"<span class='clj-lazy-seq'>(</span>","close":"<span class='clj-lazy-seq'>)</span>","separator":" ","items":[{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"},{"type":"html","content":"<strong style='font-style:italic;' onClick='javascript:alert(\"Boom! Boom! Goes the Gorilla!\");'>Oh my God this is so cool!!! </strong>","value":"#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"}"}],"value":"(#gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"} #gorilla_repl.html.HtmlView{:content \"<strong style='font-style:italic;' onClick='javascript:alert(\\\"Boom! Boom! Goes the Gorilla!\\\");'>Oh my God this is so cool!!! </strong>\"})"}
+;; <=
+
+;; @@
+
+;; @@
